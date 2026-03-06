@@ -10,6 +10,42 @@ struct Node {
 
 void output(Node *);
 
+Node * Addnodehead(Node *){
+        Node *head = nullptr;
+        Node *newVal = new Node;
+        int tmp_val = rand() % 100;
+
+        if (!head) {
+            head = newVal;
+            newVal->next = nullptr;
+            newVal->value = tmp_val;
+        }
+        else {
+            newVal->next = head;
+            newVal->value = tmp_val;
+            head = newVal;
+
+        }
+    return head; 
+}
+
+void  AddnodeTail(Node *){
+
+}
+
+void deleteNode(Node *){
+    
+}
+
+void InsertNode(Node *){
+
+}
+
+void deleteEntireList(Node *){
+
+}
+
+
 int main() {
     Node *head = nullptr;
     int count = 0;
@@ -20,16 +56,9 @@ int main() {
         Node *newVal = new Node;
         
         // adds node at head
-        if (!head) {
-            head = newVal;
-            newVal->next = nullptr;
-            newVal->value = tmp_val;
-        }
-        else {
-            newVal->next = head;
-            newVal->value = tmp_val;
-            head = newVal;
-        }
+
+    Node*  AddnodeHead(Node *);
+
     }
     output(head);
 
