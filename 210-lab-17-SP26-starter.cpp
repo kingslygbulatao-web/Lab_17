@@ -10,6 +10,7 @@ struct Node {
 
 void output(Node *);
 
+///yea not modular :(
 Node * Addnodehead(Node *){
         Node *head = nullptr;
         Node *newVal = new Node;
@@ -57,6 +58,7 @@ int main() {
         
         // adds node at head
 
+    //tried to return the head pointer
     Node*  AddnodeHead(Node *);
 
     }
